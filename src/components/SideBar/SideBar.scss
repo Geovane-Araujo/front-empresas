@@ -1,0 +1,42 @@
+.sidebar{
+  height: 100vh;
+  width: 100vw;
+}
+.sidebar-header{
+  height: 40px;
+  width: 100vw;
+  background-color: rgba($color: #050405, $alpha: 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar-header-title{
+  font-size: large;
+  margin-left: 10px;
+  -webkit-user-select: none; 
+  font-weight: bold;
+}
+.sidebar-body{
+  height: 93.6%;
+  display: flex;
+}
+.sidebar-menu{
+  height: 100%;
+  width: 14%;
+  background-color: rgba($color: #050405, $alpha: 0.9);
+  padding: 0px;
+}
+.sidebar-left{
+  height: calc(100vh - 40px);
+  width: 88%;
+  padding: 7px;
+  background-color: rgba($color: #050405, $alpha: 0.6);
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar-menu{
+    height: 93.6%;
+    width: 50px;
+  }
+}
+
